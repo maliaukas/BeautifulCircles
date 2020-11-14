@@ -10,19 +10,19 @@ import kotlin.random.Random
 
 class Circle(
     context: Context?,
-    private val radius: Float,
+    private val radius: Int,
     maxWidth: Int,
     maxHeight: Int
 ) : View(context) {
     private val paint: Paint = Paint()
 
-    private val x: Int = Random.nextInt(maxWidth)
-    private val y: Int = Random.nextInt(maxHeight)
+    private val x: Int = Random.nextInt(radius / 2, maxWidth - radius / 2)
+    private val y: Int = Random.nextInt(radius / 2,maxHeight - radius / 2)
 
     companion object {
         private val colors = arrayOf(
-            Color.BLACK, Color.BLUE,
-            Color.WHITE, Color.RED,
+            Color.WHITE, Color.BLUE,
+            Color.RED,
             Color.GREEN, Color.YELLOW,
             Color.MAGENTA, Color.CYAN,
         )
@@ -30,12 +30,13 @@ class Circle(
 
     override fun onDraw(canvas: Canvas) {
         paint.color = colors[Random.nextInt(colors.size)]
-        paint.alpha = Random.nextInt(30, 100)
+        paint.alpha = Random.nextInt(40, 100)
+        paint.isAntiAlias = true
 
         canvas.drawCircle(
             x.toFloat(),
             y.toFloat(),
-            radius,
+            radius.toFloat(),
             paint
         )
     }

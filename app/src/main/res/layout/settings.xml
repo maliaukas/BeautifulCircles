@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="monospace"
+        android:text="@string/customize_circles_size"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/twRadius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textAlignment="center" />
+
+    <hearsilent.discreteslider.DiscreteSlider
+        android:id="@+id/radiusSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:ds_count="10000"
+        app:ds_inactiveTrackColor="#3DD81B60"
+        app:ds_mode="range"
+        app:ds_thumbRadius="8dp"
+        app:ds_trackColor="#D81B60"
+        app:ds_trackWidth="4dp"
+        app:ds_valueLabelTextSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="monospace"
+        android:text="@string/customize_circles_count_per_set"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/twCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textAlignment="center" />
+
+    <hearsilent.discreteslider.DiscreteSlider
+        android:id="@+id/countSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:ds_count="101"
+        app:ds_inactiveTrackColor="#8FD1F8"
+        app:ds_mode="range"
+        app:ds_thumbRadius="8dp"
+        app:ds_trackColor="#283593"
+        app:ds_trackWidth="4dp"
+        app:ds_valueLabelTextSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/twHints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:fontFamily="monospace"
+        android:text="@string/start_text"
+        android:textSize="13sp" />
+
+</LinearLayout>
