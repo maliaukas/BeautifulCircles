@@ -85,4 +85,15 @@
         android:text="@string/start_text"
         android:textSize="13sp" />
 
+    <TextView
+        android:id="@+id/twMe"
+        android:textColor="@android:color/background_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:fontFamily="monospace"
+        android:text="@string/me"
+        android:textSize="14sp" />
+
 </LinearLayout>

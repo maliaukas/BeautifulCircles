@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GestureApp</string>
+    <string name="app_name">Circles</string>
     <string name="start_text">
    "Double tap          to generate circles
 Long press          to open settings
@@ -14,4 +14,5 @@ Swipe horizontally  to remove all circles"</string>
     <string name="customize_circles_size">Circles\' size:</string>
     <string name="customize_circles_count_per_set">Circles\' number per set:</string>
     <string name="settings_title">Settings</string>
+    <string name="me">Alexandra Maliauka\nmaliaukas@gmail.com</string>
 </resources>
