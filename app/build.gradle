@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.1"
 
     defaultConfig {
-        applicationId "maliauka.sasha.gestureapp"
+        applicationId "maliauka.sasha.circles"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1

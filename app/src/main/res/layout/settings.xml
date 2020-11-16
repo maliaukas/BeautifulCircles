@@ -6,7 +6,6 @@
     android:clipChildren="false"
     android:orientation="vertical">
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -39,7 +38,6 @@
         app:ds_trackColor="#D81B60"
         app:ds_trackWidth="4dp"
         app:ds_valueLabelTextSize="12sp" />
-
 
     <TextView
         android:id="@+id/textView1"
@@ -74,26 +72,90 @@
         app:ds_trackWidth="4dp"
         app:ds_valueLabelTextSize="12sp" />
 
-
-    <TextView
-        android:id="@+id/twHints"
+    <TableLayout
+        android:id="@+id/tableInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:fontFamily="monospace"
-        android:text="@string/start_text"
-        android:textSize="13sp" />
+        android:layout_gravity="center_horizontal">
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="@string/double_tap"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/generate_circles"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="@string/long_press"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/open_settings"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="@string/swipe_hor"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/remove_all"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="@string/swipe_vert"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/change_mode"
+                android:textSize="13sp" />
+        </TableRow>
+    </TableLayout>
 
     <TextView
         android:id="@+id/twMe"
-        android:textColor="@android:color/background_dark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="monospace"
         android:text="@string/me"
+        android:textColor="@android:color/background_dark"
         android:textSize="14sp" />
 
 </LinearLayout>

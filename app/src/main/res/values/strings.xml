@@ -1,14 +1,19 @@
 <resources>
     <string name="app_name">Circles</string>
-    <string name="start_text">
-   "Double tap          to generate circles
-Long press          to open settings
-Swipe vertically    to change mode
-Swipe horizontally  to remove all circles"</string>
+
+    <string name="double_tap">Double tap</string>
+    <string name="long_press">Long press</string>
+    <string name="swipe_vert">Swipe vertically</string>
+    <string name="swipe_hor">Swipe horizontally</string>
+
+    <string name="generate_circles">to generate circles</string>
+    <string name="open_settings">to open settings</string>
+    <string name="change_mode">to change mode</string>
+    <string name="remove_all">to remove all circles</string>
 
     <string name="no_more_circles">No circles left!\n</string>
-    <string name="what_to_do_light">Double tap to generate new set</string>
-    <string name="what_to_do_dark">Return to light mode to generate new set</string>
+    <string name="what_to_do_light">Double tap to generate new set\nOr just start drawing</string>
+    <string name="what_to_do_dark">Return to light mode</string>
 
     <string name="too_many_circles">Too many circles, delete previous first!</string>
     <string name="customize_circles_size">Circles\' size:</string>

@@ -1,4 +1,4 @@
-package maliauka.sasha.gestureapp
+package maliauka.sasha.circles
 
 import org.junit.Test
 
